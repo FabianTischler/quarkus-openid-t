@@ -1,0 +1,12 @@
+POST http://localhost:8180/auth/realms/quarkus/protocol/openid-connect/token
+Content-Type: application/x-www-form-urlencoded
+
+client_id=my-backend-service&username=user&password=passme&grant_type=password
+
+###
+
+GET localhost:8080/user
+
+###
+
+GET localhost:8080/users/admin
